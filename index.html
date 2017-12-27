@@ -1,207 +1,952 @@
-<!DOCTYPE html>
-<html>
-    
+
+<!doctype html>
+<html data-template="home" lang="en" class="has-no-js has-no-touch">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+
+        <base href="https://kbsagency.ca/">
+
+        <title>Do Things That Matter — KBS Canada</title>
+        
+        <link rel="alternate" hreflang="fr" href="http://agencekbs.ca/">
+        
+        <meta name="description" content="KBS is a global, full-service integrated agency, and we do work that matters for clients, brands and most of all, people. So, what matters to you?">
+        
+        <meta property="og:type"        content="website">
+        <meta property="og:url"         content="https://kbsagency.ca/">
+        <meta property="og:site_name"   content="KBS Canada">
+        <meta property="og:title"       content="Do Things That Matter">
+        <meta property="og:image"       content="https://kbsagency.ca/uploads/metadata/KBS_Montreal_Agence_2017_rond.jpg">
+        <meta property="og:description" content="KBS is a global, full-service integrated agency, and we do work that matters for clients, brands and most of all, people. So, what matters to you?">
+        
+        
+        <meta property="twitter:card"        content="summary">
+        <meta property="twitter:url"         content="https://kbsagency.ca/">
+        <meta property="twitter:title"       content="Do Things That Matter">
+        <meta property="twitter:image"       content="https://kbsagency.ca/uploads/metadata/KBS_Montreal_Agence_2017_rond.jpg">
+        <meta property="twitter:description" content="KBS is a global, full-service integrated agency, and we do work that matters for clients, brands and most of all, people. So, what matters to you?">
+
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="HandheldFriendly" content="True">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GETTING STARTED WITH BRACKETS</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
+
+        <!-- Theming -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://kbsagency.ca/assets/images/favicons/apple-touch-icon.png">
+        <link rel="mask-icon" href="https://kbsagency.ca/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://kbsagency.ca/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://kbsagency.ca/assets/images/favicons/favicon-16x16.png">
+        <meta name="apple-mobile-web-app-title" content="KBS Canada">
+        <meta name="application-name" content="KBS Canada">
+
+        <link rel="manifest" href="https://kbsagency.ca/manifest.json">
+        <meta name="msapplication-config" content="https://kbsagency.ca/browserconfig.xml">
+
+        <meta name="theme-color" content="#1443ef">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+            ga('create', 'UA-56752730-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script src="https://use.typekit.net/hfw5mmu.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     </head>
     <body>
-        
-        <h1>GETTING STARTED WITH BRACKETS</h1>
-        <h2>This is your guide!</h2>
-        
-        <!--
-            MADE WITH <3 AND JAVASCRIPT
-        -->
-        
-        <p>
-            Welcome to Brackets, a modern open-source code editor that understands web design. It's a lightweight,
-            yet powerful, code editor that blends visual tools into the editor so you get the right amount of help
-            when you want it.
-        </p>
-        
-        <!--
-            WHAT IS BRACKETS?
-        -->
-        <p>
-            <em>Brackets is a different type of editor.</em>
-            Brackets has some unique features like Quick Edit, Live Preview and others that you may not find in other
-            editors. Brackets is written in JavaScript, HTML and CSS. That means that most of you using Brackets
-            have the skills necessary to modify and extend the editor. In fact, we use Brackets every day to build
-            Brackets. To learn more about how to use the key features, read on.
-        </p>
-        
-        <!--
-            GET STARTED WITH YOUR OWN FILES
-        -->
-        
-        <h3>Projects in Brackets</h3>
-        <p>
-            In order to edit your own code using Brackets, you can just open the folder containing your files.
-            Brackets treats the currently open folder as a "project"; features like Code Hints, Live Preview and
-            Quick Edit only use files within the currently open folder.
-        </p>
-        
-        <samp>
-            Once you're ready to get out of this sample project and edit your own code, you can use the dropdown
-            in the left sidebar to switch folders. Right now, the dropdown says "Getting Started" - that's the
-            folder containing the file you're looking at right now. Click on the dropdown and choose "Open Folder…"
-            to open your own folder.
-            You can also use the dropdown later to switch back to folders you've opened previously, including this
-            sample project.
-        </samp>
-        
-        <!--
-            THE RELATIONSHIP BETWEEN HTML, CSS AND JAVASCRIPT
-        -->
-        <h3>Quick Edit for CSS and JavaScript</h3>
-        <p>
-            No more switching between documents and losing your context. When editing HTML, use the
-            <kbd>Cmd/Ctrl + E</kbd> shortcut to open a quick inline editor that displays all the related CSS.
-            Make a tweak to your CSS, hit <kbd>ESC</kbd> and you're back to editing HTML, or just leave the
-            CSS rules open and they'll become part of your HTML editor. If you hit <kbd>ESC</kbd> outside of
-            a quick inline editor, they'll all collapse. Quick Edit will also find rules defined in LESS and
-            SCSS files, including nested rules.
-        </p>
-        
-        <samp>
-            Want to see it in action? Place your cursor on the <!-- <samp> --> tag above and press
-            <kbd>Cmd/Ctrl + E</kbd>. You should see a CSS quick editor appear above, showing the CSS rule that
-            applies to it. Quick Edit works in class and id attributes as well. You can use it with your
-            LESS and SCSS files also.
-            
-            You can create new rules the same way. Click in one of the <!-- <p> --> tags above and press
-            <kbd>Cmd/Ctrl + E</kbd>. There are no rules for it right now, but you can click the New Rule
-            button to add a new rule for <!-- <p> -->.
-        </samp>
-        
-        <a href="screenshots/quick-edit.png">
-            <img alt="A screenshot showing CSS Quick Edit" src="screenshots/quick-edit.png" />
-        </a>
-        
-        <p>
-            You can use the same shortcut to edit other things as well - like functions in JavaScript,
-            colors, and animation timing functions - and we're adding more and more all the time.
-        </p>
-        <p>
-            For now inline editors cannot be nested, so you can only use Quick Edit while the cursor
-            is in a "full size" editor.
-        </p>
-        
-        <!--
-            LIVE PREVIEW
-        -->
-        <h3>Preview HTML and CSS changes live in the browser</h3>
-        <p>
-            You know that "save/reload dance" we've been doing for years? The one where you make changes in
-            your editor, hit save, switch to the browser and then refresh to finally see the result?
-            With Brackets, you don't have to do that dance.
-        </p>
-        <p>
-            Brackets will open a <em>live connection</em> to your local browser and push HTML and CSS updates as you
-            type! You might already be doing something like this today with browser-based tools, but with Brackets
-            there is no need to copy and paste the final code back into the editor. Your code runs in the
-            browser, but lives in your editor!
-        </p>
-        
-        <h3>Live Highlight HTML elements and CSS rules</h3>
-        <p>
-            Brackets makes it easy to see how your changes in HTML and CSS will affect the page. When your cursor
-            is on a CSS rule, Brackets will highlight all affected elements in the browser. Similarly, when editing
-            an HTML file, Brackets will highlight the corresponding HTML elements in the browser.
-        </p>
-        
-        <samp>
-            If you have Google Chrome installed, you can try this out yourself. Click on the lightning bolt
-            icon in the top right corner of your Brackets window or hit <kbd>Cmd/Ctrl + Alt + P</kbd>. When
-            Live Preview is enabled on an HTML document, all linked CSS documents can be edited in real-time.
-            The icon will change from gray to gold when Brackets establishes a connection to your browser.
-            
-            Now, place your cursor on the <!-- <img> --> tag above. Notice the blue highlight that appears
-            around the image in Chrome. Next, use <kbd>Cmd/Ctrl + E</kbd> to open up the defined CSS rules.
-            Try changing the size of the border from 10px to 20px or change the background
-            color from "transparent" to "hotpink". If you have Brackets and your browser running side-by-side, you
-            will see your changes instantly reflected in your browser. Cool, right?
-        </samp>
-        
-        <p class="note">
-            Today, Brackets only supports Live Preview for HTML and CSS. However, in the current version, changes to
-            JavaScript files are automatically reloaded when you save. We are currently working on Live Preview
-            support for JavaScript. Live previews are also only possible with Google Chrome, but we hope
-            to bring this functionality to all major browsers in the future.
-        </p>
-        
-        <h3>Quick View</h3>
-        <p>
-            For those of us who haven't yet memorized the color equivalents for HEX or RGB values, Brackets makes
-            it quick and easy to see exactly what color is being used. In either CSS or HTML, simply hover over any
-            color value or gradient and Brackets will display a preview of that color/gradient automatically. The
-            same goes for images: simply hover over the image link in the Brackets editor and it will display a
-            thumbnail preview of that image.
-        </p>
-        
-        <samp>
-            To try out Quick View for yourself, place your cursor on the <!-- <body> --> tag at the top of this
-            document and press <kbd>Cmd/Ctrl + E</kbd> to open a CSS quick editor. Now simply hover over any of the
-            color values within the CSS. You can also see it in action on gradients by opening a CSS quick editor
-            on the <!-- <html> --> tag and hovering over any of the background image values. To try out the image
-            preview, place your cursor over the screenshot image included earlier in this document.
-        </samp>
-        
-        <h3>Need something else? Try an extension!</h3>
-        <p>
-            In addition to all the goodness that's built into Brackets, our large and growing community of
-            extension developers has built hundreds of extensions that add useful functionality. If there's
-            something you need that Brackets doesn't offer, more than likely someone has built an extension for
-            it. To browse or search the list of available extensions, choose <strong>File > Extension
-            Manager…</strong> and click on the "Available" tab. When you find an extension you want, just click
-            the "Install" button next to it.
-        </p>
-        
-        <!--
-            LET US KNOW WHAT YOU THINK
-        -->
-        <h2>Get involved</h2>
-        <p>
-            Brackets is an open-source project. Web developers from around the world are contributing to build
-            a better code editor. Many more are building extensions that expand the capabilities of Brackets.
-            Let us know what you think, share your ideas or contribute directly to the project.
-        </p>
-        <ul>
-            <li><a href="http://brackets.io">Brackets.io</a></li>
-            <li><a href="http://blog.brackets.io">Brackets Team Blog</a></li>
-            <li><a href="https://github.com/adobe/brackets">Brackets on GitHub</a></li>
-            <li><a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a></li>
-            <li><a href="https://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
-            <li><a href="https://groups.google.com/forum/#!forum/brackets-dev">Brackets Developer Mailing List</a></li>
-            <li><a href="https://twitter.com/brackets">@brackets on Twitter</a></li>
-            <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
+
+
+        <div class="c-loader o-layout" aria-hidden="true">
+            <div class="c-loader_grid">
+                <div class="c-loader_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-loader_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-loader_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-loader_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-loader_grid_item o-layout_item u-1/6"></div>
+                <div class="c-loader_grid_item o-layout_item u-1/6"></div>
+            </div>
+            <div class="c-loader_logo">
+                <img src="https://kbsagency.ca/assets/images/loader.png" alt="">
+            </div>
+        </div>
+
+        <div class="c-transition-culture o-layout">
+            <div class="c-transition-culture_grid">
+                <div class="c-transition-culture_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-culture_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-culture_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-culture_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-culture_grid_item o-layout_item u-1/6"></div>
+                <div class="c-transition-culture_grid_item o-layout_item u-1/6"></div>
+            </div>
+            <figure class="c-transition-culture_image js-transition-image" style="background-image:url('https://kbsagency.ca/assets/images/culture/en/1.jpg');"></figure>
+        </div>
+        <div class="c-transition-columns o-layout">
+            <div class="c-transition-columns_grid">
+                <div class="c-transition-columns_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-columns_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-columns_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-columns_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-columns_grid_item o-layout_item u-1/6"></div>
+                <div class="c-transition-columns_grid_item o-layout_item u-1/6"></div>
+            </div>
+        </div>
+        <div class="c-transition-shutter o-layout">
+            <div class="c-transition-shutter_grid">
+                <div class="c-transition-shutter_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-shutter_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-shutter_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-shutter_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-shutter_grid_item o-layout_item u-1/6"></div>
+                <div class="c-transition-shutter_grid_item o-layout_item u-1/6"></div>
+            </div>
+        </div>
+        <div class="c-transition-wave o-layout">
+            <div class="c-transition-wave_grid">
+                <div class="c-transition-wave_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-wave_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-wave_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-wave_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-wave_grid_item o-layout_item u-1/6"></div>
+                <div class="c-transition-wave_grid_item o-layout_item u-1/6"></div>
+            </div>
+        </div>
+        <div class="c-transition-grid o-layout">
+            <div class="c-transition-grid_grid">
+                <div class="c-transition-grid_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-grid_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-grid_grid_item o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-grid_grid_item o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                <div class="c-transition-grid_grid_item o-layout_item u-1/6"></div>
+                <div class="c-transition-grid_grid_item o-layout_item u-1/6"></div>
+            </div>
+        </div>
+
+        <div class="c-lol" data-module="Lol">
+            <div class="c-lol_inner">
+                <div class="c-lol_letter js-k">
+                    K
+                </div>
+                <div class="c-lol_letter js-b">
+                    B
+                </div>
+                <div class="c-lol_letter js-s">
+                    S
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="o-barba_wrapper" id="js-barba-wrapper">
+            <div class="o-barba_container js-barba-container" data-template="home" data-lang="en">
+
+                <div class="c-popup-video js-popup-video o-vertical-lines_wrapper -dark">
+                    <div class="o-vertical-lines o-layout">
+                        <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                    </div>
+                    <figure class="c-popup-video_logo">
+                        <img src="https://kbsagency.ca/assets/images/logo-white.svg" alt="">
+                    </figure>
+                    <div class="c-popup-video_inner js-popup-video-inner">
+                        <div class="c-popup-video_embed o-embed js-popup-video-embed"></div>
+                        <div class="c-popup-video_content o-layout">
+                            <div class="c-popup-video_content_item o-layout_item u-1/4@from-small u-1/2@to-small">
+                                <p class="js-popup-video-client"></p>
+                            </div>
+                            <div class="c-popup-video_content_item o-layout_item u-1/4@from-small u-1/2@to-small">
+                                <p class="js-popup-video-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="c-popup-video_close js-popup-close" type="button">
+                        <svg role="img"><use xlink:href="assets/images/sprite.svg#close"></use></svg>
+                    </button>
+                </div>
+
+                <div class="c-popup-gallery js-popup-gallery o-vertical-lines_wrapper -dark">
+                    <div class="o-vertical-lines o-layout">
+                        <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                        <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                    </div>
+                    <figure class="c-popup-gallery_logo">
+                        <img src="https://kbsagency.ca/assets/images/logo-white.svg" alt="">
+                    </figure>
+                    <div class="c-popup-gallery_inner js-popup-gallery-inner"></div>
+                    <button class="c-popup-gallery_close js-popup-close" type="button">
+                        <svg role="img"><use xlink:href="assets/images/sprite.svg#close"></use></svg>
+                    </button>
+                </div>
+
+                <header class="c-nav" data-module="Nav">
+                    <a href="https://kbsagency.ca/" class="c-nav_logo -desktop -black">
+                        <img src="https://kbsagency.ca/assets/images/logo_sprite.png" alt="KBS Logo">
+                    </a>
+                    <a href="https://kbsagency.ca/" class="c-nav_logo -desktop -white">
+                        <img src="https://kbsagency.ca/assets/images/logo_sprite_white.png" alt="KBS Logo">
+                    </a>
+                    <a href="https://kbsagency.ca/" class="c-nav_logo -mobile -black">
+                        <img src="https://kbsagency.ca/assets/images/logo.svg" alt="KBS Logo">
+                    </a>
+                    <a href="https://kbsagency.ca/" class="c-nav_logo -mobile -white">
+                        <img src="https://kbsagency.ca/assets/images/logo-white.svg" alt="KBS Logo">
+                    </a>
+
+                    <button class="c-nav_menu_burger js-button" type="button">
+                        <span class="c-nav_menu_burger_label js-close-label">Close</span>
+                        <span class="c-nav_menu_burger_inner">
+                            <span class="c-nav_menu_burger_line"></span>
+                        </span>
+                    </button>
+                    <nav class="c-nav_menu_wrapper">
+                        <div class="c-nav_menu_grid o-layout">
+                            <div class="c-nav_menu_grid_line o-layout_item u-1/12@to-medium"></div>
+                            <div class="c-nav_menu_grid_line o-layout_item u-5/12@to-medium"></div>
+                            <div class="c-nav_menu_grid_line o-layout_item u-5/12@to-medium"></div>
+                            <div class="c-nav_menu_grid_line o-layout_item u-1/12@to-medium"></div>
+                        </div>
+                        <figure class="c-nav_menu_logo">
+                            <img src="https://kbsagency.ca/assets/images/logo-white.svg" alt="Logo KBS">
+                        </figure>
+                        <ul class="c-nav_menu o-layout">
+                            <li class="c-nav_menu_item o-layout_item u-1/5@from-medium">
+                                <a href="work" class="c-nav_menu_item_link o-label">
+                                    Work
+                                </a>
+                            </li>
+                            <li class="c-nav_menu_item o-layout_item u-1/5@from-medium">
+                                <a href="agency" class="c-nav_menu_item_link o-label">
+                                    Agency
+                                </a>
+                            </li>
+                            <li class="c-nav_menu_item o-layout_item u-1/5@from-medium">
+                                <a href="news" class="c-nav_menu_item_link o-label">
+                                    News
+                                </a>
+                            </li>
+                            <li class="c-nav_menu_item o-layout_item u-1/5@from-medium">
+                                <a href="contact" class="c-nav_menu_item_link o-label">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="c-nav_menu_info u-tiny">
+                            KBS is a global, full-service integrated agency, and we do work that matters for clients, brands and most of all, people. So, what matters to you?
+                        </div>
+
+                        <div class="c-nav_langswitcher">
+                            <a href="http://agencekbs.ca/">
+                                fr
+                            </a>
+                        </div>
+                    </nav>
+
+                </header>
+
+                <div class="o-vertical-lines o-layout">
+                    <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                    <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                    <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                    <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                    <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                    <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                </div>
+
+                <section class="o-scroll" id="js-scroll">
+
+
+    <nav class="c-sidenav js-animate" data-sticky data-module="Sidenav">
+        <div class="c-sidenav_background js-background"></div>
+        <ul class="c-sidenav_list js-animate" data-target="#scroll-keys" data-inview-class="is-visible" data-repeat>
+            <li class="c-sidenav_list_item o-label js-animate" data-target="#key-4" data-inview-class="is-active" data-repeat>
+                <a href="#key-4" class="js-scrollto">Teamwork</a>
+            </li>
+            <li class="c-sidenav_list_item o-label js-animate" data-target="#key-1" data-inview-class="is-active" data-repeat>
+                <a href="#key-1" class="js-scrollto">Details</a>
+            </li>
+            <li class="c-sidenav_list_item o-label js-animate" data-target="#key-2" data-inview-class="is-active" data-repeat>
+                <a href="#key-2" class="js-scrollto">Bravery</a>
+            </li>
+            <li class="c-sidenav_list_item o-label js-animate" data-target="#key-3" data-inview-class="is-active" data-repeat>
+                <a href="#key-3" class="js-scrollto">Ideas</a>
+            </li>
+            <li class="c-sidenav_list_item o-label js-animate" data-target="#key-5" data-inview-class="is-active" data-repeat>
+                <a href="#key-5" class="js-scrollto">Results</a>
+            </li>
         </ul>
+        <button class="c-sidenav_button js-button">
+            Our Values
+        </button>
+    </nav>
+
+    <div class="o-container">
+
+        <section class="c-home o-layout">
+            <div class="o-layout_item u-1/2@from-medium">
+                <h1 class="c-home_title">
+                    <span class="c-home_title_line js-animate" data-speed="8" data-position="top">
+                        <span class="c-home_title_line_value">
+                            Do
+                        </span>
+                    </span>
+                    <span class="c-home_title_line js-animate" data-speed="6" data-position="top">
+                        <span class="c-home_title_line_value">
+                            things
+                        </span>
+                    </span>
+                    <span class="c-home_title_line js-animate" data-speed="4" data-position="top">
+                        <span class="c-home_title_line_value">
+                            that
+                        </span>
+                    </span>
+                    <span class="c-home_title_line js-animate" data-speed="2" data-position="top">
+                        <span class="c-home_title_line_value -featured">
+                            matter
+                        </span>
+                    </span>
+                </h1>
+            </div>
+            <div class="o-layout_item u-1/2@from-medium">
+                <h2 class="c-home_tagline">
+                    <span class="c-home_tagline_line">KBS is a global,</span>
+                    <span class="c-home_tagline_line">full-service integrated</span>
+                    <span class="c-home_tagline_line">agency, and we do</span>
+                    <span class="c-home_tagline_line -underline">work that matters</span>
+                    <span class="c-home_tagline_line">for clients, brands</span>
+                    <span class="c-home_tagline_line">and most of all people.</span>
+                    <span class="c-home_tagline_line">So, what matters to you?</span>
+                </h2>
+
+                <div class="c-home_actions">
+                    <div class="o-layout">
+                        <div class="c-home_actions_item o-layout_item u-1/2">
+                            <button class="c-home_actions_button o-button js-scrollto" data-target="#scroll-keys" type="button">
+                                <span class="o-button_label">
+                                    Our Values
+                                </span>
+                                <span class="o-button_label_hover" aria-hidden="true">
+                                    Our Values
+                                </span>
+                            </button>
+                            <p class="c-home_actions_text u-tiny">
+                                Learn what <br> matters to KBS
+                            </p>
+                        </div>
+                        <div class="c-home_actions_item o-layout_item u-1/2">
+                            <a href="work" class="c-home_actions_button o-button">
+                                <span class="o-button_label">
+                                    Our Work
+                                </span>
+                                <span class="o-button_label_hover" aria-hidden="true">
+                                    Our Work
+                                </span>
+                            </a>
+                            <p class="c-home_actions_text u-tiny">
+                                View case studies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="c-keys" id="scroll-keys" data-module="Accordion">
+            <div class="c-keys_item js-accordion-item js-keys-item" id="key-4">
+                <div class="c-keys_item_header js-accordion-header">
+                    <h3 class="c-keys_item_header_inner">
+                        <span class="c-keys_item_header_more"></span>
+                        Teamwork
+                    </h3>
+                </div>
+                <div class="c-keys_item_content js-accordion-content">
+                    <div class="c-keys_content o-layout -reverse">
+                        <div class="c-keys_image_wrapper o-layout_item u-1/2@from-medium">
+                            <figure class="c-keys_image js-keys-image js-animate" data-module="Illustration" data-id="key-4" data-speed="1.4" data-callback="triggerScroll.Illustration:{}" data-repeat></figure>
+                        </div>
+                        <header class="c-keys_header o-layout_item u-1/2@from-medium">
+                            <p class="o-label js-animate u-anim-appear-scroll">
+                                <span class="o-label_index">
+                                    01
+                                </span>
+                                <span class="o-label_value">
+                                    Featured Case study
+                                </span>
+                            </p>
+                            <h2 class="c-keys_title js-animate">
+                                <span class="c-keys_title_line">
+                                    Better
+                                </span>
+                                <span class="c-keys_title_line -underline">
+                                    Together
+                                </span>
+                            </h2>
+                            <div class="c-keys_case js-animate">
+                                <h3 class="c-keys_case_title">
+                                Teamwork Matters – Innocence
+                                
+                                </h3>
+                                <p class="c-keys_case_content u-tiny">
+                                    The process of overturning a wrongful conviction can take up to 10 years. Each one is a monumental victory for the wrongly convicted and for Innocence Canada.
+At a time when Innocence Canada had a backlog of 86 cases and no certain future, KBS stood alongside Innocence Canada to create a logo that captured public and government attention, and united staff and clients towards the cause. 
+                                    
+                                </p>
+                                <div class="o-layout -middle c-keys_case_actions">
+                                    <div class="o-layout_item u-1/2">
+                                        <a href="work/innocence-canada" class="o-button c-keys_case_button">
+                                            <span class="o-button_label">
+                                                Full case study
+                                            </span>
+                                            <span class="o-button_label_hover" aria-hidden="true">
+                                                Full case study
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="o-layout_item u-1/2">
+                                        <figure class="c-keys_case_logo">
+                                            <img src="uploads/case-studies/images/Homepage/innocence_logo_homecontent.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="c-keys_medias_wrapper o-layout -reverse js-animate">
+                        <div class="c-keys_medias o-layout_item u-1/2@from-medium">
+                            <div class="c-keys_video js-animate" data-speed="1.2">
+                                
+                                <div class="c-content-video"
+                                    data-module="Video"
+                                    data-iframe='<iframe src="https://player.vimeo.com/video/215043988" frameborder="0" allowfullscreen></iframe>'
+                                    data-provider="vimeo"
+                                    data-popup="true"
+                                    data-client="Innocence Canada"
+                                    data-title="Logo"
+                                >
+                                    <div class="c-content-video_inner o-embed js-embed-inner js-animate">
+                                        <figure class="c-content-video_background js-background" style="background-image:url('https://i.vimeocdn.com/video/631674562_1280x720.jpg')"></figure>
+                                        <button class="c-content-video_button js-button" type="button">
+                                            <svg role="img"><use xlink:href="assets/images/sprite.svg#play-full"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-keys_item js-accordion-item js-keys-item" id="key-1">
+                <div class="c-keys_item_header js-accordion-header">
+                    <h3 class="c-keys_item_header_inner">
+                        <span class="c-keys_item_header_more"></span>
+                        Details
+                    </h3>
+                </div>
+                <div class="c-keys_item_content js-accordion-content">
+                    <div class="c-keys_content o-layout -reverse">
+                        <div class="c-keys_image_wrapper o-layout_item u-1/2@from-medium">
+                            <figure class="c-keys_image js-keys-image js-animate" data-module="Illustration" data-id="key-1" data-speed="1.4" data-callback="triggerScroll.Illustration:{}" data-repeat></figure>
+                        </div>
+                        <header class="c-keys_header o-layout_item u-1/2@from-medium">
+                            <p class="o-label js-animate u-anim-appear-scroll">
+                                <span class="o-label_index">
+                                    02
+                                </span>
+                                <span class="o-label_value">
+                                    Featured Case study
+                                </span>
+                            </p>
+                            <h2 class="c-keys_title js-animate">
+                                <span class="c-keys_title_line">
+                                    The truth
+                                </span>
+                                <span class="c-keys_title_line">
+                                    is in the 
+                                </span>
+                                <span class="c-keys_title_line -underline">
+                                    details
+                                </span>
+                            </h2>
+                            <div class="c-keys_case js-animate">
+                                <h3 class="c-keys_case_title">
+                                Details Matter – Ace
+                                
+                                </h3>
+                                <p class="c-keys_case_content u-tiny">
+                                    How can a niche brand with low awareness and significant in-store competition break through to bread lovers and turn them into ACE loyalists?
+
+For our target consumer, it’s all in the details. From the squeeze test to the smell, from the crunch to the melt in your mouth chew, ACE baguettes let you savour every moment every day.
+                                    
+                                </p>
+                                <div class="o-layout -middle c-keys_case_actions">
+                                    <div class="o-layout_item u-1/2">
+                                        <a href="work/discover-ace-bakery" class="o-button c-keys_case_button">
+                                            <span class="o-button_label">
+                                                Full case study
+                                            </span>
+                                            <span class="o-button_label_hover" aria-hidden="true">
+                                                Full case study
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="o-layout_item u-1/2">
+                                        <figure class="c-keys_case_logo">
+                                            <img src="uploads/case-studies/images/Homepage/ace_logo_homecontent.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="c-keys_medias_wrapper o-layout -reverse js-animate">
+                        <div class="c-keys_medias o-layout_item u-1/2@from-medium">
+                            <div class="c-keys_video js-animate" data-speed="1.2">
+                                
+                                <div class="c-content-video"
+                                    data-module="Video"
+                                    data-iframe='<iframe src="https://player.vimeo.com/video/233362937" frameborder="0" allowfullscreen></iframe>'
+                                    data-provider="vimeo"
+                                    data-popup="true"
+                                    data-client="ACE Bakery"
+                                    data-title="Discover Great Bread"
+                                >
+                                    <div class="c-content-video_inner o-embed js-embed-inner js-animate">
+                                        <figure class="c-content-video_background js-background" style="background-image:url('https://i.vimeocdn.com/video/654670532_1280x720.jpg')"></figure>
+                                        <button class="c-content-video_button js-button" type="button">
+                                            <svg role="img"><use xlink:href="assets/images/sprite.svg#play-full"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-keys_item js-accordion-item js-keys-item" id="key-2">
+                <div class="c-keys_item_header js-accordion-header">
+                    <h3 class="c-keys_item_header_inner">
+                        <span class="c-keys_item_header_more"></span>
+                        Bravery
+                    </h3>
+                </div>
+                <div class="c-keys_item_content js-accordion-content">
+                    <div class="c-keys_content o-layout -reverse">
+                        <div class="c-keys_image_wrapper o-layout_item u-1/2@from-medium">
+                            <figure class="c-keys_image js-keys-image js-animate" data-module="Illustration" data-id="key-2" data-speed="1.4" data-callback="triggerScroll.Illustration:{}" data-repeat></figure>
+                        </div>
+                        <header class="c-keys_header o-layout_item u-1/2@from-medium">
+                            <p class="o-label js-animate u-anim-appear-scroll">
+                                <span class="o-label_index">
+                                    03
+                                </span>
+                                <span class="o-label_value">
+                                    Featured Case study
+                                </span>
+                            </p>
+                            <h2 class="c-keys_title js-animate">
+                                <span class="c-keys_title_line">
+                                    Fortune
+                                </span>
+                                <span class="c-keys_title_line">
+                                    favours the 
+                                </span>
+                                <span class="c-keys_title_line -underline">
+                                    brave
+                                </span>
+                            </h2>
+                            <div class="c-keys_case js-animate">
+                                <h3 class="c-keys_case_title">
+                                Bravery Matters – BMO
+                                
+                                </h3>
+                                <p class="c-keys_case_content u-tiny">
+                                    How does an institutional bank become a beacon for Millennials who are just not that into investing? By demonstrating just how simple and beneficial investing can be for their aspirations, without applying pressure.
+It takes bravery for one of Canada’s Big Five to show Millennials how their money can work for them— literally putting our first Prime Minister, and face of the $10 bill—to work.
+                                    
+                                </p>
+                                <div class="o-layout -middle c-keys_case_actions">
+                                    <div class="o-layout_item u-1/2">
+                                        <a href="work/bmo" class="o-button c-keys_case_button">
+                                            <span class="o-button_label">
+                                                Full case study
+                                            </span>
+                                            <span class="o-button_label_hover" aria-hidden="true">
+                                                Full case study
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="o-layout_item u-1/2">
+                                        <figure class="c-keys_case_logo">
+                                            <img src="uploads/agency/clients/EN/logos_BMO.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="c-keys_medias_wrapper o-layout -reverse js-animate">
+                        <div class="c-keys_medias o-layout_item u-1/2@from-medium">
+                            <div class="c-keys_video js-animate" data-speed="1.2">
+                                
+                                <div class="c-content-video"
+                                    data-module="Video"
+                                    data-iframe='<iframe src="https://player.vimeo.com/video/234329866" frameborder="0" allowfullscreen></iframe>'
+                                    data-provider="vimeo"
+                                    data-popup="true"
+                                    data-client="BMO"
+                                    data-title="Let your money do the hard work"
+                                >
+                                    <div class="c-content-video_inner o-embed js-embed-inner js-animate">
+                                        <figure class="c-content-video_background js-background" style="background-image:url('https://i.vimeocdn.com/video/655883182_1280x720.jpg')"></figure>
+                                        <button class="c-content-video_button js-button" type="button">
+                                            <svg role="img"><use xlink:href="assets/images/sprite.svg#play-full"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-keys_item js-accordion-item js-keys-item" id="key-3">
+                <div class="c-keys_item_header js-accordion-header">
+                    <h3 class="c-keys_item_header_inner">
+                        <span class="c-keys_item_header_more"></span>
+                        Ideas
+                    </h3>
+                </div>
+                <div class="c-keys_item_content js-accordion-content">
+                    <div class="c-keys_content o-layout -reverse">
+                        <div class="c-keys_image_wrapper o-layout_item u-1/2@from-medium">
+                            <figure class="c-keys_image js-keys-image js-animate" data-module="Illustration" data-id="key-3" data-speed="1.4" data-callback="triggerScroll.Illustration:{}" data-repeat></figure>
+                        </div>
+                        <header class="c-keys_header o-layout_item u-1/2@from-medium">
+                            <p class="o-label js-animate u-anim-appear-scroll">
+                                <span class="o-label_index">
+                                    04
+                                </span>
+                                <span class="o-label_value">
+                                    Featured Case study
+                                </span>
+                            </p>
+                            <h2 class="c-keys_title js-animate">
+                                <span class="c-keys_title_line">
+                                    Ideas can 
+                                </span>
+                                <span class="c-keys_title_line">
+                                    change the 
+                                </span>
+                                <span class="c-keys_title_line -underline">
+                                    world
+                                </span>
+                            </h2>
+                            <div class="c-keys_case js-animate">
+                                <h3 class="c-keys_case_title">
+                                Ideas Matter – World Vision
+                                
+                                </h3>
+                                <p class="c-keys_case_content u-tiny">
+                                    We click, like and share, taking part in global social and political issues we feel deserve attention via social media. But clicktivism can also leave us feeling disconnected from the impact we’re having.
+
+Our idea was to recognize and thank World Vision followers for their social support; showing them the tangible impact their participation made, using the technology itself to show them.
+                                    
+                                </p>
+                                <div class="o-layout -middle c-keys_case_actions">
+                                    <div class="o-layout_item u-1/2">
+                                        <a href="work/clicktivism" class="o-button c-keys_case_button">
+                                            <span class="o-button_label">
+                                                Full case study
+                                            </span>
+                                            <span class="o-button_label_hover" aria-hidden="true">
+                                                Full case study
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="o-layout_item u-1/2">
+                                        <figure class="c-keys_case_logo">
+                                            <img src="uploads/agency/clients/EN/logos_World-Vision.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="c-keys_medias_wrapper o-layout -reverse js-animate">
+                        <div class="c-keys_medias o-layout_item u-1/2@from-medium">
+                            <div class="c-keys_video js-animate" data-speed="1.2">
+                                
+                                <div class="c-content-video"
+                                    data-module="Video"
+                                    data-iframe='<iframe src="https://player.vimeo.com/video/233362979" frameborder="0" allowfullscreen></iframe>'
+                                    data-provider="vimeo"
+                                    data-popup="true"
+                                    data-client="World Vision"
+                                    data-title="Clicktivism"
+                                >
+                                    <div class="c-content-video_inner o-embed js-embed-inner js-animate">
+                                        <figure class="c-content-video_background js-background" style="background-image:url('https://i.vimeocdn.com/video/654670621_1280x720.jpg')"></figure>
+                                        <button class="c-content-video_button js-button" type="button">
+                                            <svg role="img"><use xlink:href="assets/images/sprite.svg#play-full"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-keys_item js-accordion-item js-keys-item" id="key-5">
+                <div class="c-keys_item_header js-accordion-header">
+                    <h3 class="c-keys_item_header_inner">
+                        <span class="c-keys_item_header_more"></span>
+                        Results
+                    </h3>
+                </div>
+                <div class="c-keys_item_content js-accordion-content">
+                    <div class="c-keys_content o-layout -reverse">
+                        <div class="c-keys_image_wrapper o-layout_item u-1/2@from-medium">
+                            <figure class="c-keys_image js-keys-image js-animate" data-module="Illustration" data-id="key-5" data-speed="1.4" data-callback="triggerScroll.Illustration:{}" data-repeat></figure>
+                        </div>
+                        <header class="c-keys_header o-layout_item u-1/2@from-medium">
+                            <p class="o-label js-animate u-anim-appear-scroll">
+                                <span class="o-label_index">
+                                    05
+                                </span>
+                                <span class="o-label_value">
+                                    Featured Case study
+                                </span>
+                            </p>
+                            <h2 class="c-keys_title js-animate">
+                                <span class="c-keys_title_line">
+                                    Great 
+                                </span>
+                                <span class="c-keys_title_line">
+                                    work 
+                                </span>
+                                <span class="c-keys_title_line -underline">
+                                    works.
+                                </span>
+                            </h2>
+                            <div class="c-keys_case js-animate">
+                                <h3 class="c-keys_case_title">
+                                Results Matter – The Keg
+                                
+                                </h3>
+                                <p class="c-keys_case_content u-tiny">
+                                    For decades, Canadians have celebrated birthdays, graduations, anniversaries, and other big life moments at The Keg. But times are changing, our job was to reframe The Keg as a place for any occasion, too.
+
+Instead of pointing out the reasons why people are celebrating at The Keg, our creative pointed out the reasons they aren’t. As a result, more people are going and The Keg saw its largest increase in sales in a single year.
+                                    
+                                </p>
+                                <div class="o-layout -middle c-keys_case_actions">
+                                    <div class="o-layout_item u-1/2">
+                                        <a href="work/the-keg" class="o-button c-keys_case_button">
+                                            <span class="o-button_label">
+                                                Full case study
+                                            </span>
+                                            <span class="o-button_label_hover" aria-hidden="true">
+                                                Full case study
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="o-layout_item u-1/2">
+                                        <figure class="c-keys_case_logo">
+                                            <img src="uploads/case-studies/images/Homepage/thekeg_logo_homecontent.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="c-keys_medias_wrapper o-layout -reverse js-animate">
+                        <div class="c-keys_medias o-layout_item u-1/2@from-medium">
+                            <div class="c-keys_video js-animate" data-speed="1.2">
+                                
+                                <div class="c-content-video"
+                                    data-module="Video"
+                                    data-iframe='<iframe src="https://player.vimeo.com/video/234328687" frameborder="0" allowfullscreen></iframe>'
+                                    data-provider="vimeo"
+                                    data-popup="true"
+                                    data-client="The Keg"
+                                    data-title="Why Not Tonight"
+                                >
+                                    <div class="c-content-video_inner o-embed js-embed-inner js-animate">
+                                        <figure class="c-content-video_background js-background" style="background-image:url('https://i.vimeocdn.com/video/655880206_1280x720.jpg')"></figure>
+                                        <button class="c-content-video_button js-button" type="button">
+                                            <svg role="img"><use xlink:href="assets/images/sprite.svg#play-full"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="c-call-to-action js-animate">
+            <a href="agency" class="c-call-to-action_link">
+                <figure class="c-call-to-action_image_wrapper">
+                    <div class="c-call-to-action_image" style="background-image: url('assets/images/cta-en.jpg');
+        "></div>
+                </figure>
+                <svg class="c-call-to-action_svg" width="482" height="482" viewBox="0 0 482 482">
+                  <circle class="c-call-to-action_circle" cx="241" cy="241" r="229" transform="rotate(-90,241,241)"/>
+                </svg>
+                <p class="c-call-to-action_label">
+                    Can
+                </p>
+            </a>
+            <div class="c-call-to-action_content o-layout -middle">
+                <div class="c-call-to-action_header o-layout_item u-1/2">
+                    <p class="o-label c-call-to-action_header_label js-animate">
+                        Agency
+                    </p>
+                    <h4 class="c-call-to-action_title js-animate">
+                        <span class="c-call-to-action_title_line">
+                            About
+                        </span>
+                        <span class="c-call-to-action_title_line">
+                            KBS
+                        </span>
+                        <span class="c-call-to-action_title_line -underline">
+                            Canada
+                        </span>
+                    </h4>
+                </div>
+                <div class="c-call-to-action_details o-layout_item u-1/2 js-animate">
+                    <p class="c-call-to-action_text u-tiny js-animate">
+                        Now that you've seen some of our work, get to know more about the people behind it.
+                    </p>
+                    <a href="agency" class="c-call-to-action_button o-button js-animate">
+                        <span class="o-button_label">
+                            Be Our Guest
+                        </span>
+                        <span class="o-button_label_hover" aria-hidden="true">
+                            Be Our Guest
+                        </span>
+                    </a>
+                </div>
+            </div>
         
+        </div>
+
+    </div>
+
+
+                    <footer class="c-footer js-animate o-vertical-lines_wrapper -dark">
+                        <div class="o-vertical-lines o-layout">
+                            <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                            <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                            <div class="o-vertical-lines_line o-layout_item u-5/12@to-medium u-1/6@from-medium"></div>
+                            <div class="o-vertical-lines_line o-layout_item u-1/12@to-medium u-1/6@from-medium"></div>
+                            <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                            <div class="o-vertical-lines_line o-layout_item u-1/6"></div>
+                        </div>
+                        <div class="c-footer_inner">
+                            <div class="c-footer_contact o-layout">
+                                <div class="c-footer_contact_item js-animate o-layout_item u-1/2@from-medium">
+                                    <div class="o-layout">
+                                        <div class="c-footer_contact_item_name o-layout_item u-1/4@from-small">
+                                            <h4 class="c-footer_contact_item_name_label o-label">
+                                                Tor
+                                            </h4>
+                                        </div>
+                                        <div class="c-footer_contact_item_phone_wrapper o-layout_item u-1/4@from-small u-1/2@to-small">
+                                            <a href="tel:14162607000" class="c-footer_contact_item_phone o-link">
+                                                +1 (416) 260 7000
+                                            </a>
+                                        </div>
+                                        <div class="c-footer_contact_item_address_wrapper o-layout_item u-1/2">
+                                            <p class="c-footer_contact_item_address">
+                                                340 King Street East, 5th Floor <br>
+                                                Toronto, Ontario
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-footer_contact_item js-animate o-layout_item u-1/2@from-medium">
+                                    <div class="o-layout">
+                                        <div class="c-footer_contact_item_name o-layout_item u-1/4@from-small">
+                                            <h4 class="c-footer_contact_item_name_label o-label">
+                                                Mtl
+                                            </h4>
+                                        </div>
+                                        <div class="c-footer_contact_item_phone_wrapper o-layout_item u-1/4@from-small u-1/2@to-small">
+                                            <a href="tel:15148757430" class="c-footer_contact_item_phone o-link">
+                                                +1 (514) 875 7430
+                                            </a>
+                                        </div>
+                                        <div class="c-footer_contact_item_address_wrapper o-layout_item u-1/2">
+                                            <p class="c-footer_contact_item_address">
+                                                3510 St-Laurent #410<br>
+                                                Montreal, Quebec
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+                </section> 
+
+                <ul class="c-socials">
+                    <li class="c-socials_item">
+                        <a href="https://facebook.com/kbsCanada/" target="_blank" class="c-socials_item_link">
+                            <svg role="img"><use xlink:href="/assets/images/sprite.svg#social-facebook"></use></svg>
+                        </a>
+                    </li>
+                    <li class="c-socials_item">
+                        <a href="https://twitter.com/kbscanada" target="_blank" class="c-socials_item_link">
+                            <svg role="img"><use xlink:href="/assets/images/sprite.svg#social-twitter"></use></svg>
+                        </a>
+                    </li>
+                    <li class="c-socials_item">
+                        <a href="https://www.linkedin.com/company/kbs-p-toronto" target="_blank" class="c-socials_item_link">
+                            <svg role="img"><use xlink:href="/assets/images/sprite.svg#social-linkedin"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <script class="js-inline">
+                    window.lang = 'en';
+                    window.transitionImages = ["https:\/\/kbsagency.ca\/uploads\/transitions\/en\/3.jpg","https:\/\/kbsagency.ca\/uploads\/transitions\/en\/4.jpg","https:\/\/kbsagency.ca\/uploads\/transitions\/en\/12.jpg","https:\/\/kbsagency.ca\/uploads\/transitions\/en\/7.jpg"];
+                </script>
+
+            </div> 
+        </div> 
+
+        <script>
+            window.isIe = false;
+            window.isIos = false;
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/scripts/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="assets/scripts/vendors.js"></script>
+        <script src="assets/scripts/app.js?v=1.5"></script>
     </body>
 </html>
-<!--
 
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[     CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io  ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-
--->
